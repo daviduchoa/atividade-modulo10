@@ -94,14 +94,14 @@ const ListarTarefa = () => {
                 <TableHead>
                 <TableRow>
                     <TableCell>#</TableCell>
-                    <TableCell>Título</TableCell>
-                    <TableCell align="right">Descrição</TableCell>
-                    <TableCell align="right">Data de Início</TableCell>
-                    <TableCell align="right">Data de Finalização</TableCell>
-                    <TableCell align="right">Status</TableCell>
-                    <TableCell align="right">Recurso</TableCell>
-                    <TableCell align="left"></TableCell>
-                    <TableCell align="left"></TableCell>
+                    <TableCell sx={{ fontSize: '20px' }}>Título</TableCell>
+                    <TableCell sx={{ fontSize: '20px' }} align="right">Descrição</TableCell>
+                    <TableCell sx={{ fontSize: '20px' }} align="right">Data de Início</TableCell>
+                    <TableCell sx={{ fontSize: '20px' }} align="right">Data de Finalização</TableCell>
+                    <TableCell sx={{ fontSize: '20px' }} align="right">Status</TableCell>
+                    <TableCell sx={{ fontSize: '20px' }} align="right">Recurso</TableCell>
+                    <TableCell sx={{ fontSize: '20px' }} align="left"></TableCell>
+                    <TableCell sx={{ fontSize: '20px' }} align="left"></TableCell>
                 </TableRow>
                 </TableHead>
                 <TableBody>
@@ -133,9 +133,9 @@ const ListarTarefa = () => {
             </Table>
             </TableContainer>
         </CardContent>
-        <CardActions>
-            <Button size="small" variant="contained" onClick={handleOpen}>Criar Tarefa</Button>
-            <Button size="small" variant="outlined">Cancelar</Button>
+        <CardActions sx={{ justifyContent: 'end', marginRight: '8px' }}>
+            <Button size="small" variant="contained" color='secondary' onClick={handleOpen}>Criar Tarefa</Button>
+            <Button size="small" variant="outlined" color='secondary'>Cancelar</Button>
       </CardActions> 
     </Card>
     <div>
